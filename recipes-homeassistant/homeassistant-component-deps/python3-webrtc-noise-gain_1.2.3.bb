@@ -9,6 +9,7 @@ DEPENDS += "\
 
 inherit pypi python_setuptools_build_meta
 
+SRC_URI += "file:///0001-musl-compatibility.patch"
 SRC_URI:aarch64 += "file://0001-Fix-machine-when-crosscompiling.patch"
 SRC_URI[sha256sum] = "4282f79066774ebc30242d7174f0c53cdcfa984b68c88f586cd52cb2356c5e75"
 
